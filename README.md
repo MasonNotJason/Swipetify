@@ -38,6 +38,6 @@ In **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swip
 # Known Issues
 
 - Sometimes, the program just doesn't hook into Spotify correctly. Not sure if this is a Spotify bug or a Swipetify one, but usually I fix it by relaunching the script, ensuring that Spotify is maximized and paused.
-	- Also, if you *don't* use Spotify Premium, you might need to the option on line 10 to have the same name as your Spotify window.
+	- Also, if you *don't* use Spotify Premium, you might need to edit line 10 to match the name of your Spotify window.
 
 Having problems? Don't be a stranger! Please reach out with any bugs/fixes you've found: It's greatly appreciated!
