@@ -28,7 +28,7 @@ In **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swip
 
 # Plans for Swipetify
 
- - [x] Add *(slightly)* better comments *(v1-2)*
+ - [x] Add (slightly) better comments *(v1-2)*
  - [ ] Replace DISTANCE_MODIFIER with a more accurate system based off of the distance between key landmarks.
  - [x] Remove those pesky UserWarning messages. Yes, I know SymbolDatabase.GetPrototype() is deprecated. Please stop telling me. *(v1-2)*
  - [ ] Move user settings to an options.txt file
