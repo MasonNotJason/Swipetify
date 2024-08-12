@@ -27,7 +27,7 @@ The application hooks into Spotify with **pywinauto**, which allows keybinds to 
 
 
 # Customization
-In **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swipetify.py* script, with comments explaining how they work.
+As of **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swipetify.py* script, with comments explaining how they work.
 
 # Plans for Swipetify
 
@@ -43,6 +43,5 @@ In **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swip
 
 - Sometimes, the program just doesn't hook into Spotify correctly. Not sure if this is a Spotify bug or a Swipetify one, but usually I fix it by relaunching the script, ensuring that Spotify is maximized and paused.
 	- Also, if you *don't* use Spotify Premium, you might need to edit line 10 to match the name of your Spotify window.
- - I really, really can't figure out what is causign the UserWarning messages in console. It's very strange, and it doesn't happen 
 
 Having problems? Don't be a stranger! Please reach out with any bugs/fixes you've found: It's greatly appreciated!
