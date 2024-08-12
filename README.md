@@ -28,16 +28,18 @@ In **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swip
 
 # Plans for Swipetify
 
+ - [x] Add *(slightly)* better comments *(v1-2)*
  - [ ] Replace DISTANCE_MODIFIER with a more accurate system based off of the distance between key landmarks.
- - [ ] Remove those pesky UserWarning messages. Yes, I know SymbolDatabase.GetPrototype() is deprecated. Please stop telling me.
+ - [x] Remove those pesky UserWarning messages. Yes, I know SymbolDatabase.GetPrototype() is deprecated. Please stop telling me. *(v1-2)*
  - [ ] Move user settings to an options.txt file
- - [ ] Create a requirements.txt to make pip installing necessary modules much easier
- - [ ] Disable the testing webcam (or allow it to toggle on/off in options)
+ - [x] Create a requirements.txt to make pip installing necessary modules much easier *(v1-2)*
+ - [x] Disable the testing webcam (or allow it to toggle on/off in options) *(v1-2)*
  - [ ] Add more actions? Suggestions for this one would be greatly appreciated.
 
 # Known Issues
 
 - Sometimes, the program just doesn't hook into Spotify correctly. Not sure if this is a Spotify bug or a Swipetify one, but usually I fix it by relaunching the script, ensuring that Spotify is maximized and paused.
 	- Also, if you *don't* use Spotify Premium, you might need to edit line 10 to match the name of your Spotify window.
+ - I really, really can't figure out what is causign the UserWarning messages in console. It's very strange, and it doesn't happen 
 
 Having problems? Don't be a stranger! Please reach out with any bugs/fixes you've found: It's greatly appreciated!
