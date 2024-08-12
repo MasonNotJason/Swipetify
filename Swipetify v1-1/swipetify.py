@@ -1,4 +1,4 @@
-## hand tracking & display pulled from https://www.youtube.com/playlist?list=PLlLe2PpVuiVJEHO5UuLad4zd_iziE3b_o
+## hand tracking code inspired by https://www.youtube.com/playlist?list=PLlLe2PpVuiVJEHO5UuLad4zd_iziE3b_o
 import cv2              # for pulling and modifying camera data
 import mediapipe as mp  # pre-trained general hand tracker
 import pywinauto        # allows python script to interface with Spotify
@@ -9,8 +9,8 @@ HANDCOUNT = 1                       # number of hands on display. 1 recommended.
 DISTANCE_MODIFIER = 3               # change this to modify elements that vary depending on distance from camera
 SPOTIFY_TITLE = "Spotify Premium"   # change this to your Spotify window's title. Mine was "Spotify Premium," but yours might just be "Spotify"
 CHECK_COUNT = 6                     # number of times pose must be made to allow cmd to trigger. Default is 8.
+capture = cv2.VideoCapture(0)                                                           # declares "capture" var as 0th detected webcam. You may need to change this if the program is using the wrong camera.
 
-capture = cv2.VideoCapture(1)                                                           # declares "capture" var as 0th detected webcam
 capture.set(cv2.CAP_PROP_FRAME_HEIGHT,90) ; capture.set(cv2.CAP_PROP_FRAME_WIDTH,160)  # sets camera capture's height ; width
 
 mp_drawing = mp.solutions.drawing_utils
@@ -18,14 +18,12 @@ mp_hands = mp.solutions.hands
 
 Hand = mp_hands.Hands(max_num_hands=HANDCOUNT)
 
-
-
+## spotify hook from Spotify Global: https://github.com/mavvos/SpotifyGlobal
 try:
     app = pywinauto.Application().connect(title=SPOTIFY_TITLE)
     print('Spotify found')
 except pywinauto.findwindows.ElementNotFoundError:
     app = pywinauto.Application().connect(best_match="Chrome_Widget_Win0")
-    print('lesser spotify found')
 finally:
     sp = app["Chrome_Widget_Win0"]
 
