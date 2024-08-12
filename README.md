@@ -6,7 +6,7 @@ Swipetify is a Mediapipe-to-Spotify hand tracking controller for Windows, writte
 This program is *NOT* polished, nor is it *really* ready for a public release. It functions, but definitely needs a bit of work before I'll be happy with it. **More of a proof of concept than anything else.**
 
 That said, it still works smoothly 9 times out of 10, in my personal experience.
-One thing I can't seem to get rid of at the moment are the deprecation warnings,though. If anyone has any fixes, I'd love to see that resolved in the next version. It's likely weighing down the whole script.
+One thing I can't seem to get rid of at the moment are the deprecation warnings, though. If anyone has any fixes, I'd love to see that resolved in the next version. It's likely weighing down the whole script.
 
 # How to Use
 After launching Spotify, run the *swipetify.py* file to activate the Swipetify script (do this while Spotify is open & not playing music to ensure a good connection). Sometimes the script can be a little finicky (I believe due to issues with Spotify) but once you can get one command through you're good to go and *shouldn't* experience any other issues.
