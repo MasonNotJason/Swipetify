@@ -29,7 +29,7 @@ In **v1-1**, most of the easily-accessed settings are in lines 8-12 of the *swip
 # Plans for Swipetify
 
  - [ ] Replace DISTANCE_MODIFIER with a more accurate system based off of the distance between key landmarks.
- - [ ] Remove those pesky UserWarning messages. Yes, I know SymbolDatabase.GetPrototype() is deprecated. No, I don't know why I should care.
+ - [ ] Remove those pesky UserWarning messages. Yes, I know SymbolDatabase.GetPrototype() is deprecated. Please stop telling me.
  - [ ] Move user settings to an options.txt file
  - [ ] Create a requirements.txt to make pip installing necessary modules much easier
  - [ ] Disable the testing webcam (or allow it to toggle on/off in options)
